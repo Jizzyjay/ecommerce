@@ -1,0 +1,108 @@
+.relatedProduct {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.relatedProduct h1 {
+  color: #171717;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.relatedProduct hr {
+  width: 200px;
+  height: 6px;
+  border-radius: 10px;
+  background: #252525;
+}
+
+.relatedProduct-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 25px;
+  row-gap: 30px;
+  margin-top: 50px;
+  cursor: pointer;
+}
+
+@media (max-width: 1280px) {
+  .relatedProduct {
+    height: 70%;
+  }
+
+  .relatedProduct h1 {
+    font-size: 40px;
+    margin-top: 1rem;
+  }
+
+  .relatedProduct hr {
+    width: 160px;
+    height: 4px;
+  }
+
+  .relatedProduct-item {
+    gap: 20px;
+    margin: 2.5rem 0;
+  }
+}
+
+@media (max-width: 1024px) {
+  .relatedProduct {
+    height: 60%;
+  }
+
+  .relatedProduct h1 {
+    font-size: 30px;
+    margin-top: 1rem;
+  }
+
+  .relatedProduct hr {
+    width: 120px;
+    height: 3px;
+  }
+
+  .relatedProduct-item {
+    gap: 15px;
+    margin: 2.5rem 0;
+  }
+}
+
+@media (max-width: 800px) {
+  .relatedProduct {
+    height: 50%;
+  }
+
+  .relatedProduct h1 {
+    font-size: 25px;
+    margin-top: 1rem;
+  }
+
+  .relatedProduct hr {
+    width: 100px;
+  }
+
+  .relatedProduct-item {
+    gap: 10px;
+    margin: 2rem 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .relatedProduct {
+    height: 85%;
+  }
+
+  .relatedProduct h1 {
+    font-size: 25px;
+    margin-top: 1rem;
+  }
+
+  .relatedProduct-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin: 2rem 0;
+  }
+}
