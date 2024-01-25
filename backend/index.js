@@ -8,13 +8,7 @@ const path = require("path");
 const cors = require("cors");
 
 app.use(express.json());
-app.use(cors(
-    {
-        origin: 'https://ecommerce-gules-three.vercel.app/',
-        methods: ['GET', 'POST'],
-        credentials: true,
-    }
-));
+app.use(cors());
 
 // Database configuration with MongoDB connection
 mongoose.connect(
